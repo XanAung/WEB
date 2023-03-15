@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FieldSet, DataList, Template</title>
+</head>
+<body>
+    <template>
+        <h1>Hello World</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatem adipisci. Vitae quibusdam commodi pariatur? Reprehenderit, voluptate suscipit vitae iste temporibus tenetur ipsum mollitia quasi eius debitis nulla saepe omnis natus provident excepturi qui sunt dolores hic incidunt optio veritatis quae quidem pariatur ullam? Voluptatibus eius molestiae doloribus ea ipsum sunt sequi eaque eveniet, harum minima et illo pariatur dolores ex voluptas. Error reiciendis voluptatum veniam dicta maxime non distinctio nam asperiores omnis culpa, labore magni molestiae, quidem aliquam earum corporis sequi eligendi consectetur eos facilis assumenda? Corrupti culpa quo, sit ducimus, tempore mollitia accusantium quisquam nemo atque natus illo!        </p>
+    </template>
+    <form>
+        <fieldset>
+            <legend>Register Now</legend>
+            <input type="text" list="car-list">
+            <datalist id="car-list">
+                <option value="Honda">
+                <option value="Toyota">
+                <option value="Wish">
+                <option value="Dream">
+            </datalist><br><br>
+            <input type="text" placeholder="Username"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <input type="password" placeholder="Password"><br><br>
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+
+    <script>
+        let template = document.querySelector('template');
+        let tempCont = template.content.cloneNode(true);
+        document.body.append(tempCont);
+    </script>
+</body>
+</html>
