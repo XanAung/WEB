@@ -1,0 +1,17 @@
+#one{
+    font-family: "Courier New";
+}
+
+#two{
+    font-family: "Times New Roman";
+}
+
+#three{
+    font-family: Arial;
+}
+
+p {
+    font-family: Ubuntu;
+    /* font-style: oblique; */
+    /* font-variant: small-caps; */
+}

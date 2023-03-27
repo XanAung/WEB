@@ -1,18 +1,19 @@
 /* body {
-     height: 100vh;
-    background-color: red;
-    background-image: url("image/bf.png");
+    height: 100vh;
+    background-image: url("images/sbg.png");
     background-repeat: no-repeat;
-    background-position: center left; 
+    background-position: center center;
 } */
 
-div {
-    height: 100px;
+div{
+    height: 20px;
+    margin: 20px;
+    border: 20px solid rgba(225, 0, 0, 1);
+    padding: 40px;
     overflow: scroll;
-    margin: 50px;
-    border: 20px solid blue;
-    background-image: url("image/bf.png");
+    background-image: url("images/sbg.png");
     background-repeat: no-repeat;
+    background-position: top right;
     background-attachment: scroll;
     background-origin: content-box;
 }

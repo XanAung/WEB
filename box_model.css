@@ -1,0 +1,7 @@
+div{
+    border: 20px solid hsl(353, 93%, 50%);
+    margin: 50px;
+    padding: 40px;
+    outline: 30px solid hsl(300, 80%, 50%);
+    outline-offset: 8px;
+}
