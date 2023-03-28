@@ -1,0 +1,25 @@
+table, th, td {
+    border: 2px solid orange;
+}
+
+caption {
+    font-weight: bolder;
+}
+
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+th {
+    text-align: center;
+    background-color: red;
+    color: #fff;
+}
+
+td {
+    height: 50px;
+    vertical-align: top;
+}
