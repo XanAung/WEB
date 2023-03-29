@@ -3,6 +3,24 @@
     padding: 0;
 }
 
+.box {
+    width: 150px;
+    height: 150px;
+}
+
+.a {
+    background-color: red;
+}
+
+.b {
+    background-color: green;
+    visibility: hidden;
+}
+
+.c {
+    background-color: blue;
+}
+
 ul {
     list-style-type: none;
     text-align: center;
@@ -11,6 +29,7 @@ ul {
 
 ul>li {
     display: inline-block;
+    /* width: 100%; */
 }
 
 ul>li>a {
@@ -18,8 +37,10 @@ ul>li>a {
     color: #fff;
     background-color: blue;
     display: inline-block;
+    width: 100px;
+    text-align: center;
     padding: 10px 20px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 ul>li>a:hover {
