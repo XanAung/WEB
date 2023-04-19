@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.box {
+    min-height: 150px;
+    background-color: tomato;
+}
+
+.box:nth-of-type(odd) {
+    background-color: blueviolet;
+}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ccc;
+}
+
+nav>ul {
+    list-style-type: none;
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* justify-items: center; */
+}
+
+nav>ul>li {
+    /* justify-self: center; */
+    text-align: center;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    color: #000;
+    text-transform: uppercase;
+    background-color: #ddd;
+}
+
+nav>ul>li>a:not(nav>ul>li:last-child>a){
+    border-right: 1px solid #ccc;
+}
+
+nav>ul>li>a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.teamtitle {
+    text-align: center;
+    margin: 20px 0;
+    color: orange;
+}
+
+section {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-column-gap: 8px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box > h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+    color: firebrick;
+}
+
+.box > h4 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.box > p {
+    text-align: justify;
+}

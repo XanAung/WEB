@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    /* min-width: 500px; */
+}
+
+.one {
+    flex-shrink: 3;
+}
+
+.four {
+    flex-shrink: 3;
+}
+
+.card {
+    flex-basis: 150px;
+    /* min-width: 150px; */
+    height: 200px;
+    background-color: hotpink;
+    font-size: 2em;
+    color: #fff;
+}
+
+.card:nth-of-type(even) {
+    background-color: blueviolet;
+}

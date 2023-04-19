@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate & Scale</title>
+    <style>
+        .box {
+            margin: 100px;
+            border-left: 8px dashed red;
+            padding: 20px;
+            perspective: 100px;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: #555;
+            transition: 2s;
+            transform-origin: right;
+        }
+
+        .square:hover {
+            /*rotate*/
+            /* transform: rotate(90deg); */
+            /* transform: rotateX(75deg); */
+            transform: rotateY(180deg);
+
+            /*scale*/
+            /* transform: scale(1.5, 1.5); */
+            /* transform: scaleX(1.5); */
+            /* transform: scaleY(.5); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="square">
+            <span>
+                Rotate & Scale
+            </span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+ol>li::marker {
+    color: red;
+}
+
+h1::after {
+    content: " World";
+    color: red;
+}
+
+p::first-letter {
+    color: red;
+    font-size: 2em;
+    margin-right: 4px;
+}
+
+p::first-line {
+    color: green;
+}
+
+::selection {
+    background-color: #858080;
+    color: #fff;
+}
+

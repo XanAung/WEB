@@ -1,0 +1,24 @@
+.box {
+    width: 150px;
+    height: 150px;
+    /* float: left; */
+}
+
+.a {
+    background-color: red;
+}
+
+.b {
+    background-color: green;
+    float: left;
+}
+
+.c {
+    background-color: blue;
+    float: left;
+    /* clear: both; */
+}
+
+footer {
+    clear: both;
+}

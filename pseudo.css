@@ -1,0 +1,60 @@
+/* input:checked + span {
+    color: green;
+} */
+
+/* input:disabled + span {
+    color: blue;
+} */
+
+/* p:empty {
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+} */
+
+/* p:first-child {
+    color: orange;
+} */
+/* 
+.wrapper > p:last-child {
+    color: red;
+} */
+
+/* input {
+    border: 3px solid red;
+}
+
+input:focus {
+    border: 3px solid green;
+    outline: none;
+} */
+
+/* input:in-range {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+} */
+
+/* .wrapper > p:only-of-type {
+    font-size: 2em;
+    color: red;
+} */
+
+/* input:required {
+    background-color: red;
+}
+
+input:optional {
+    background-color: green;
+} */
+
+:root {
+    --primary-color: blue;
+}
+
+.wrapper > p:nth-of-type(even) {
+    font-size: 2em;
+    color: var(--primary-color);
+}
