@@ -1,0 +1,18 @@
+doctype html 
+html 
+    head
+        title pug looping
+    body
+        - const order = "complete"
+
+        include inc/_nav
+
+        case order 
+            when "pending"
+                p your order is processing and coming
+            when "transit"
+                p your order is upcoming
+            when "complete"
+                p your order is already completed 
+            default
+                p your order is undefined

@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.card-section, nav {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #212A3E;
+  line-height: 45px;
+}
+nav .nav-inner {
+  display: flex;
+}
+nav .nav-inner .left-div h1 {
+  color: #fff;
+  padding: 0 18px;
+}
+nav .nav-inner ul {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  align-items: center;
+}
+nav .nav-inner ul li {
+  line-height: 25px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+nav .nav-inner ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 18px;
+  text-transform: uppercase;
+}
+nav .nav-inner ul li:after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #9BA4B5;
+  transform: scale(0, 1);
+  transition: 500ms;
+}
+nav .nav-inner ul li:hover::after {
+  transform: scale(1, 1);
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  background-color: #212A3E;
+  margin-top: 10px;
+}
+.card .card-header {
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  text-transform: uppercase;
+}
+.card .card-img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.card figcaption {
+  color: #fff;
+}
+.card .card-footer {
+  padding: 2px;
+  background-color: #9BA4B5;
+}
+.card .card-footer button {
+  display: block;
+  width: 100%;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #394867;
+  color: #212A3E;
+}
+.card .card-footer button:hover {
+  background-color: #9BA4B5;
+  color: #fff;
+}
+
+.btn-primary {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #212A3E;
+  color: #9BA4B5;
+}
+.btn-primary:hover {
+  background-color: #9BA4B5;
+  color: #212A3E;
+}
+
+.btn-secondary {
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #9BA4B5;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #394867;
+  color: #fff;
+}
+
+.btn-accent {
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #394867;
+  color: #fff;
+}
+.btn-accent:hover {
+  background-color: #394867;
+  color: #212A3E;
+}
+
+.btn-default {
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #9BA4B5;
+  color: #394867;
+}
+.btn-default:hover {
+  background-color: #212A3E;
+  color: #394867;
+}
+
+/*# sourceMappingURL=main.css.map */

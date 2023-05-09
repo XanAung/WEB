@@ -1,0 +1,42 @@
+nav {
+    background-color: $primary;
+    @extend %fixwrapper;
+    line-height: 45px;
+    .nav-inner {
+        display: flex;
+        .left-div {
+            h1 {
+                color: $default;
+                padding: 0 18px;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            align-items: center;
+            li {
+                line-height: 25px;
+                margin: 0 5px;
+                cursor: pointer;
+                a {
+                    color: $default;
+                    text-decoration: none;
+                    padding: 0 18px;
+                    text-transform: uppercase;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    border-bottom: 5px solid $accent;
+                    transform: scale(0,1);
+                    transition: 500ms;
+                }
+
+                &:hover::after {
+                    transform: scale(1,1);
+                }
+            }
+        }
+    }
+}

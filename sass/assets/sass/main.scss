@@ -1,0 +1,58 @@
+@use "base";
+@import "variables";
+@import "heritances";
+@import "nav";
+@import "mixin";
+
+.card-section{
+    @extend %fixwrapper;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+.card {
+    background-color: $primary;
+    margin-top: 10px;
+    .card-header {
+        color: $default;
+        text-align: center;
+        padding: 8px 0;
+        text-transform: uppercase;
+    }
+    .card-img{
+        display: block;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        // object-position: 25% 25%;
+    }
+    figcaption {
+        color: $default;
+    }
+    .card-footer {
+        padding: 2px;
+        background-color: $accent;
+        button{
+            display: block;
+            width: 100%;
+            @include button($secondary,$primary,$accent,$default);
+        }
+    }
+}
+
+.btn-primary {
+    @include button($primary,$accent,$accent,$primary,"20px");
+}
+
+.btn-secondary {
+    @include button($accent,$default,$secondary,$default);
+}
+
+.btn-accent {
+    @include button($secondary,$default,$secondary,$primary);
+}
+
+.btn-default {
+    @include button($accent,$secondary,$primary,$secondary);
+}
