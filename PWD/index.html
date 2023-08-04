@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Sample</title>
+    <style>
+        .boxes {
+            width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .box {
+            height: 200px
+        }
+
+        #box1 {
+            background-color: yellow;
+            display: none;
+        }
+
+        #box2 {
+            background-color: green;
+            display: none;
+
+        }
+
+        #box3 {
+            background-color: red;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="controls">
+            <button id="prev">&laquo; Prev </button>
+            <button id="next">Next &raquo;</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

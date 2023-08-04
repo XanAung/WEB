@@ -93,10 +93,46 @@ nav .nav-inner ul li:hover::after {
   transform: scale(1, 1);
 }
 
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
 .card-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .card-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 426px) {
+  .card-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {

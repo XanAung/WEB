@@ -1,58 +1,93 @@
 @use "base";
 @import "variables";
-@import "heritances";
+@import "inheritances";
 @import "nav";
 @import "mixin";
 
-.card-section{
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+
+    @include tQ("1400px", "1024px") {
+        font-size: 30px;
+    }
+
+    @include tQ("1024px", "768px") {
+        font-size: 22px;
+    }
+
+    @include tQ("768px") {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.card-section {
     @extend %fixwrapper;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
+
+    @include mQ("1024px") {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mQ("768px") {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mQ("426px") {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
     background-color: $primary;
     margin-top: 10px;
+
     .card-header {
         color: $default;
         text-align: center;
         padding: 8px 0;
         text-transform: uppercase;
     }
-    .card-img{
+
+    .card-img {
         display: block;
         width: 150px;
         height: 150px;
         object-fit: cover;
         // object-position: 25% 25%;
     }
+
     figcaption {
         color: $default;
     }
+
     .card-footer {
         padding: 2px;
         background-color: $accent;
-        button{
+
+        button {
             display: block;
             width: 100%;
-            @include button($secondary,$primary,$accent,$default);
+            @include button($secondary, $primary, $accent, $default);
         }
     }
 }
 
 .btn-primary {
-    @include button($primary,$accent,$accent,$primary,"20px");
+    @include button($primary, $accent, $accent, $primary, "20px");
 }
 
 .btn-secondary {
-    @include button($accent,$default,$secondary,$default);
+    @include button($accent, $default, $secondary, $default);
 }
 
 .btn-accent {
-    @include button($secondary,$default,$secondary,$primary);
+    @include button($secondary, $default, $secondary, $primary);
 }
 
 .btn-default {
-    @include button($accent,$secondary,$primary,$secondary);
+    @include button($accent, $secondary, $primary, $secondary);
 }
